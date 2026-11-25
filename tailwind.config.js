@@ -1,0 +1,88 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#fdf8f6',
+          100: '#f8e8e0',
+          200: '#f0d0c0',
+          300: '#e4b099',
+          400: '#d48a6a',
+          500: '#c46b45',
+          600: '#a85634',
+          700: '#8c452a',
+          800: '#6e3824',
+          900: '#4d2819',
+        },
+        gold: {
+          50: '#fefdf8',
+          100: '#fcf5e0',
+          200: '#f7e8b8',
+          300: '#f0d688',
+          400: '#e8c056',
+          500: '#d9a82f',
+          600: '#b8881e',
+          700: '#8f6818',
+          800: '#6a4e16',
+          900: '#4a3611',
+        },
+        ink: {
+          50: '#f7f7f6',
+          100: '#e6e4e0',
+          200: '#ccc8c0',
+          300: '#aaa498',
+          400: '#867e6e',
+          500: '#6b6254',
+          600: '#554d42',
+          700: '#453f36',
+          800: '#38332d',
+          900: '#2b2722',
+        },
+        // 深色主题配色
+        dark: {
+          50: '#3a352e',
+          100: '#332e28',
+          200: '#2c2722',
+          300: '#26211d',
+          400: '#1f1c18',
+          500: '#1a1714',
+          600: '#161310',
+          700: '#12100d',
+          800: '#0d0b09',
+          900: '#080705',
+        },
+        darkCard: {
+          50: '#2f2a24',
+          100: '#2a2520',
+          200: '#25201c',
+          300: '#201c18',
+          400: '#1c1915',
+          500: '#181512',
+        },
+      },
+      fontFamily: {
+        sans: ['"Noto Sans CJK SC"', '"Microsoft YaHei"', 'system-ui', 'sans-serif'],
+        serif: ['"Noto Serif CJK SC"', '"SimSun"', 'Georgia', 'serif'],
+      },
+      backgroundImage: {
+        'gradient-gold': 'linear-gradient(135deg, #d9a82f 0%, #b8881e 100%)',
+        'gradient-gold-light': 'linear-gradient(135deg, #e8c056 0%, #d9a82f 100%)',
+        'gradient-ink': 'linear-gradient(135deg, #453f36 0%, #2b2722 100%)',
+        'gradient-paper': 'linear-gradient(180deg, #fefdf8 0%, #f8f4ec 100%)',
+        'gradient-dark': 'linear-gradient(180deg, #1a1714 0%, #0d0b09 100%)',
+        'gradient-dark-card': 'linear-gradient(135deg, #25201c 0%, #1c1915 100%)',
+      },
+      boxShadow: {
+        'dark': '0 4px 20px rgba(0, 0, 0, 0.4)',
+        'dark-lg': '0 10px 40px rgba(0, 0, 0, 0.5)',
+        'gold-glow': '0 0 20px rgba(217, 168, 47, 0.3)',
+      },
+    },
+  },
+  plugins: [],
+}

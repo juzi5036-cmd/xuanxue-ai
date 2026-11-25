@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用户协议与隐私政策 - 玄学AI</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.8;
+    padding: 20px;
+  }
+  .container { max-width: 800px; margin: 0 auto; }
+  .tab-bar {
+    display: flex;
+    gap: 0;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #333;
+  }
+  .tab {
+    flex: 1;
+    padding: 14px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+    background: #1a1a1a;
+    color: #888;
+    border: none;
+  }
+  .tab.active { background: #c8a45c; color: #0a0a0a; }
+  .content { display: none; }
+  .content.active { display: block; }
+  h1 { font-size: 24px; color: #c8a45c; margin-bottom: 8px; text-align: center; }
+  h2 { font-size: 18px; color: #c8a45c; margin: 28px 0 12px; border-left: 3px solid #c8a45c; padding-left: 12px; }
+  h3 { font-size: 15px; color: #d4b876; margin: 20px 0 8px; }
+  p { margin-bottom: 12px; font-size: 14px; color: #bbb; }
+  ul, ol { margin: 0 0 12px 20px; }
+  li { font-size: 14px; color: #bbb; margin-bottom: 6px; }
+  .highlight { background: rgba(200,164,92,0.1); padding: 12px 16px; border-radius: 8px; border-left: 3px solid #c8a45c; margin: 16px 0; }
+  .highlight p { color: #d4b876; font-size: 13px; }
+  .update-date { text-align: center; color: #666; font-size: 13px; margin-bottom: 24px; }
+  .toc { background: #111; border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+  .toc h3 { color: #c8a45c; margin-bottom: 10px; font-size: 14px; }
+  .toc ol { margin-left: 16px; }
+  .toc li { margin-bottom: 4px; font-size: 13px; color: #888; }
+  .toc a { color: #888; text-decoration: none; }
+  .toc a:hover { color: #c8a45c; }
+  @media (max-width: 600px) {
+    body { padding: 12px; }
+    .tab { font-size: 14px; padding: 12px 8px; }
+    h1 { font-size: 20px; }
+    h2 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="tab-bar">
+    <button class="tab active" onclick="switchTab('agreement')">用户协议</button>
+    <button class="tab" onclick="switchTab('privacy')">隐私政策</button>
+  </div>
+
+  <!-- ==================== 用户协议 ==================== -->
+  <div id="agreement" class="content active">
+    <h1>玄学AI用户服务协议</h1>
+    <p class="update-date">更新日期：2026年9月11日 | 生效日期：2026年9月11日</p>
+
+    <div class="toc">
+      <h3>目录</h3>
+      <ol>
+        <li><a href="#a1">总则与接受</a></li>
+        <li><a href="#a2">服务说明</a></li>
+        <li><a href="#a3">账号注册与管理</a></li>
+        <li><a href="#a4">用户行为规范</a></li>
+        <li><a href="#a5">付费服务与会员</a></li>
+        <li><a href="#a6">时辰反推专项条款</a></li>
+        <li><a href="#a7">知识产权</a></li>
+        <li><a href="#a8">免责声明</a></li>
+        <li><a href="#a9">服务变更与终止</a></li>
+        <li><a href="#a10">争议解决</a></li>
+        <li><a href="#a11">其他</a></li>
+      </ol>
+    </div>
+
+    <h2 id="a1">一、总则与接受</h2>
+    <p>本《用户服务协议》（以下简称"本协议"）由您（以下简称"用户"或"您"）与玄学AI平台（以下简称"本平台"）共同缔结。本协议构成您使用本平台服务的基础法律文件。</p>
+    <p>请您在使用本平台服务前，仔细阅读并充分理解本协议各条款。您勾选"我已阅读并同意"或使用本平台任一服务，即视为您已完全接受本协议全部内容。如您不同意本协议任意条款，请立即停止使用本平台服务。</p>
+    <div class="highlight">
+      <p><strong>特别提示：</strong>本协议中与您的权益密切相关的条款（如免责条款、付费服务条款等）已以加粗形式标注，请重点阅读。</p>
+    </div>
+
+    <h2 id="a2">二、服务说明</h2>
+    <p>本平台基于中华传统民俗文化（包括但不限于八字命理、五行学说、十神关系等），结合人工智能技术，为用户提供以下服务：</p>
+    <ol>
+      <li>八字命理排盘与AI解析；</li>
+      <li>时辰精准反推（基于用户问卷信息推测出生时辰）；</li>
+      <li>会员专属功能（格局分析、神煞分析、刑冲合害、大运流年等）；</li>
+      <li>个人命盘档案存储与管理；</li>
+      <li>其他本平台可能在未来上线的功能或服务。</li>
+    </ol>
+    <div class="highlight">
+      <p><strong>重要提示：</strong>本平台所有内容均基于中华传统民俗文化，仅供文化研究、娱乐参考之用，不构成任何专业建议（包括但不限于医疗、法律、金融、心理咨询等）。本平台内容不作为人生重大决策的唯一依据，请理性看待。</p>
+    </div>
+
+    <h2 id="a3">三、账号注册与管理</h2>
+    <h3>3.1 账号注册</h3>
+    <ul>
+      <li>您需使用本人有效手机号码注册本平台账号；</li>
+      <li>注册时需提供真实手机号并接收验证码完成验证；</li>
+      <li>每个手机号仅可注册一个账号。</li>
+    </ul>
+    <h3>3.2 账号安全</h3>
+    <ul>
+      <li>您应妥善保管账号信息，因您自身原因导致账号泄露造成的损失由您自行承担；</li>
+      <li>如发现账号被盗用或异常使用，应立即通知本平台；</li>
+      <li>本平台有权对疑似被盗用或违规使用的账号采取限制措施。</li>
+    </ul>
+    <h3>3.3 账号注销</h3>
+    <ul>
+      <li>您可随时在"个人中心-账号设置"中申请注销账号；</li>
+      <li>注销后，您的个人信息、命盘档案、测算历史等数据将被永久删除且不可恢复；</li>
+      <li>注销后，您未到期的会员权益及剩余的时辰反推次数将自动作废，不予退款。</li>
+    </ul>
+
+    <h2 id="a4">四、用户行为规范</h2>
+    <p>您在使用本平台服务时，应遵守以下规范：</p>
+    <ol>
+      <li>提供真实、准确的个人信息（包括但不限于出生日期、出生地点等），因信息不实导致的测算结果偏差由您自行承担；</li>
+      <li>不得利用本平台从事任何违法违规活动；</li>
+      <li>不得对本平台内容进行反向工程、反编译、反汇编等操作；</li>
+      <li>不得以任何方式干扰本平台服务器的正常运行；</li>
+      <li>不得未经授权爬取、复制、传播本平台受知识产权保护的内容；</li>
+      <li>不得将本平台提供的测算结果用于商业用途或二次售卖。</li>
+    </ol>
+
+    <h2 id="a5">五、付费服务与会员</h2>
+    <h3>5.1 会员套餐</h3>
+    <p>本平台提供以下会员套餐供用户选择：</p>
+    <ul>
+      <li><strong>月度全站会员</strong>（¥28/30天）：全站八字AI测算、深度解析、高阶术数功能、无限命盘存档、PDF报告导出；</li>
+      <li><strong>季度全站会员</strong>（¥68/90天）：含月度全部权益 + 3次时辰反推机会 + 专属客服优先服务；</li>
+      <li><strong>整年全站会员</strong>（¥128/365天）：含季度全部权益 + 全年无限次时辰反推 + 专属命理顾问1V1答疑 + 每月深度运势报告。</li>
+    </ul>
+    <h3>5.2 核心单品</h3>
+    <ul>
+      <li><strong>时辰精准反推</strong>（¥68/次）：独立付费产品，与会员权益完全分割、互不互通，包含2次完整测算机会。</li>
+    </ul>
+    <h3>5.3 付费服务规则</h3>
+    <ol>
+      <li><strong>付费即生效：</strong>支付成功后立即激活相应权益，不支持退款，但法律法规另有规定的除外；</li>
+      <li><strong>到期处理：</strong>会员到期后，命盘档案和测算历史永久保存，但无法继续使用会员功能；</li>
+      <li><strong>不可转让：</strong>会员权益及时辰反推次数均绑定单一账号，不可转让、不可共享；</li>
+      <li><strong>价格调整：</strong>本平台保留调整服务价格的权利，已购买用户不受影响；</li>
+      <li><strong>禁止滥用：</strong>如发现利用系统漏洞、作弊等手段获取额外权益，本平台有权冻结相关账号并取消非法获取的权益。</li>
+    </ol>
+
+    <h2 id="a6">六、时辰反推专项条款</h2>
+    <div class="highlight">
+      <p><strong>请您特别注意以下条款，购买即视为接受全部内容：</strong></p>
+    </div>
+    <ol>
+      <li><strong>永久绑定：</strong>时辰反推服务永久绑定1个人，不可换人、不可代他人测算，一经购买即锁定个人信息；</li>
+      <li><strong>次数限制：</strong>¥68套餐仅包含2次完整测算机会，次数用完后需重新购买，不支持免费补充；</li>
+      <li><strong>信息锁定：</strong>提交出生信息后姓名不可修改，请在提交前仔细核对；</li>
+      <li><strong>答题与准确性：</strong>您需如实回答问卷题目，如因故意隐瞒或错误作答导致结果偏差，本平台不承担责任；</li>
+      <li><strong>跳过答题：</strong>您可选择跳过部分题目，但答题数量越少，推算结果置信度越低，可能存在2-4小时误差区间；</li>
+      <li><strong>独立产品：</strong>时辰反推为独立单项产品，不赠送月度会员任何权限，月度会员不含时辰反推；</li>
+      <li><strong>结果性质：</strong>推算结果基于传统民俗文化算法和AI模型，仅供文化参考，不保证100%准确。</li>
+    </ol>
+
+    <h2 id="a7">七、知识产权</h2>
+    <ol>
+      <li>本平台的算法、题库、提示词、解析文案、界面设计等内容，其知识产权均归本平台所有，受相关法律法规保护；</li>
+      <li>未经本平台书面授权，任何人不得复制、转载、传播、修改或以其他方式使用上述内容；</li>
+      <li>用户使用本平台服务产生的个人命盘数据，用户享有个人数据权利，但本平台有权在脱敏后用于改善服务质量；</li>
+      <li>未经本平台授权，不得将本平台提供的测算结果用于商业用途。</li>
+    </ol>
+
+    <h2 id="a8">八、免责声明</h2>
+    <div class="highlight">
+      <p><strong>以下免责条款涉及您的重大权益，请仔细阅读：</strong></p>
+    </div>
+    <ol>
+      <li><strong>文化参考性质：</strong>本平台所有内容均基于中华传统民俗文化生成，仅供文化研究、娱乐参考之用，不构成任何形式的专业建议（包括但不限于医疗诊断、法律意见、金融投资建议、心理咨询等）；</li>
+      <li><strong>不保证准确性：</strong>本平台的AI测算结果可能存在偏差或错误，本平台不对测算结果的准确性、完整性作出任何明示或暗示的保证；</li>
+      <li><strong>决策责任：</strong>用户基于本平台内容作出的任何决策（包括但不限于婚姻、投资、职业选择、健康等），由用户自行承担全部责任，本平台不承担任何直接或间接损失；</li>
+      <li><strong>不可抗力：</strong>因网络故障、系统维护、服务器中断、政策变化等不可抗力因素导致服务中断，本平台不承担责任；</li>
+      <li><strong>第三方服务：</strong>本平台如涉及第三方支付、短信等服务，其服务质量由第三方负责；</li>
+      <li><strong>用户信息不实：</strong>因用户提供虚假或不完整信息导致的测算结果偏差，本平台不承担责任。</li>
+    </ol>
+
+    <h2 id="a9">九、服务变更与终止</h2>
+    <ol>
+      <li>本平台有权根据运营需要，随时调整、新增、停止部分或全部服务，并提前公告；</li>
+      <li>如用户违反本协议约定或相关法律法规，本平台有权随时限制、冻结或终止用户账号；</li>
+      <li>本平台如因业务调整停止运营，将提前30天公告，并保障已付费用户的合理权益。</li>
+    </ol>
+
+    <h2 id="a10">十、争议解决</h2>
+    <ol>
+      <li>本协议的签订、履行、解释均适用中华人民共和国法律；</li>
+      <li>因本协议产生的争议，双方应首先协商解决；协商不成的，任何一方可向本平台运营方所在地有管辖权的人民法院提起诉讼；</li>
+      <li>在争议解决期间，不涉及争议的条款继续有效。</li>
+    </ol>
+
+    <h2 id="a11">十一、其他</h2>
+    <ol>
+      <li>本平台保留对本协议的最终解释权；</li>
+      <li>本协议条款如有更新，以平台最新版本为准，恕不另行通知，请定期查阅；</li>
+      <li>本协议任一条款如被认定为无效或不可执行，不影响其余条款的效力。</li>
+    </ol>
+  </div>
+
+  <!-- ==================== 隐私政策 ==================== -->
+  <div id="privacy" class="content">
+    <h1>玄学AI隐私政策</h1>
+    <p class="update-date">更新日期：2026年9月11日 | 生效日期：2026年9月11日</p>
+
+    <div class="toc">
+      <h3>目录</h3>
+      <ol>
+        <li><a href="#p1">引言</a></li>
+        <li><a href="#p2">我们收集的信息</a></li>
+        <li><a href="#p3">信息的使用</a></li>
+        <li><a href="#p4">信息的存储与保护</a></li>
+        <li><a href="#p5">信息的共享与披露</a></li>
+        <li><a href="#p6">您的权利</a></li>
+        <li><a href="#p7">未成年人保护</a></li>
+        <li><a href="#p8">Cookie与同类技术</a></li>
+        <li><a href="#p9">第三方SDK说明</a></li>
+        <li><a href="#p10">政策更新</a></li>
+        <li><a href="#p11">联系我们</a></li>
+      </ol>
+    </div>
+
+    <h2 id="p1">一、引言</h2>
+    <p>玄学AI（以下简称"本平台"）深知个人信息对您的重要性。本隐私政策旨在向您说明本平台如何收集、使用、存储、共享和保护您的个人信息。请您在使用本平台服务前，仔细阅读并充分理解本政策的全部内容。</p>
+    <p>您勾选"我已阅读并同意"或使用本平台任一服务，即视为您同意本隐私政策所述的信息处理方式。</p>
+    <div class="highlight">
+      <p><strong>请特别注意：</strong>本平台基于中华传统民俗文化提供服务，为完成八字排盘和时辰反推等核心功能，我们需要收集您的出生日期、出生地点等敏感个人信息。我们将严格按照《中华人民共和国个人信息保护法》及相关法律法规处理您的信息。</p>
+    </div>
+
+    <h2 id="p2">二、我们收集的信息</h2>
+
+    <h3>2.1 您主动提供的信息</h3>
+    <ul>
+      <li><strong>手机号码：</strong>用于注册账号、身份验证和登录；</li>
+      <li><strong>姓名：</strong>用于命盘生成和档案管理（选填，时辰反推服务中提交后永久锁定）；</li>
+      <li><strong>性别：</strong>用于命理测算（八字排盘存在性别差异）；</li>
+      <li><strong>出生日期：</strong>年、月、日，用于八字排盘和命理推算；</li>
+      <li><strong>出生时间：</strong>时辰或模糊时段，用于命理推算和时辰反推；</li>
+      <li><strong>出生城市：</strong>用于真太阳时校正，提高时辰反推准确度；</li>
+      <li><strong>问卷答案：</strong>30道题目涉及性格特征、人生经历、家庭关系等，用于时辰反推推算；</li>
+      <li><strong>头像和昵称：</strong>用于个人资料展示（选填）。</li>
+    </ul>
+
+    <h3>2.2 自动收集的信息</h3>
+    <ul>
+      <li>设备信息（设备型号、操作系统版本、屏幕分辨率）；</li>
+      <li>网络信息（IP地址、网络类型）；</li>
+      <li>日志信息（访问时间、页面浏览记录、操作日志）；</li>
+      <li>使用数据（功能使用频次、偏好设置）。</li>
+    </ul>
+
+    <h3>2.3 信息敏感性说明</h3>
+    <p>您的出生日期、出生地点、手机号属于个人信息保护法规定的敏感个人信息。我们收集这些信息仅为提供命理测算服务所必需，不会用于其他目的。</p>
+
+    <h2 id="p3">三、信息的使用</h2>
+    <p>我们收集的信息将用于以下目的：</p>
+    <ol>
+      <li><strong>提供核心服务：</strong>八字排盘、时辰反推、命盘生成、解析报告等；</li>
+      <li><strong>账号管理：</strong>注册、登录、身份验证、账号安全保护；</li>
+      <li><strong>数据存储：</strong>保存您的命盘档案和测算历史，便于您随时查阅；</li>
+      <li><strong>服务改进：</strong>在脱敏处理后用于优化算法模型和提升服务质量；</li>
+      <li><strong>客服支持：</strong>处理您的咨询、投诉和售后服务请求；</li>
+      <li><strong>安全防护：</strong>防范欺诈、滥用和非法行为，保障平台安全；</li>
+      <li><strong>法律法规要求：</strong>配合监管机构或司法机关的合法要求。</li>
+    </ol>
+    <div class="highlight">
+      <p><strong>承诺：</strong>我们不会将您的个人信息出售给任何第三方。我们不会将您的出生信息、测算结果等敏感数据用于定向广告推送。</p>
+    </div>
+
+    <h2 id="p4">四、信息的存储与保护</h2>
+    <h3>4.1 存储地点</h3>
+    <p>您的个人信息存储在中华人民共和国境内的服务器上，不会跨境传输。</p>
+    <h3>4.2 存储期限</h3>
+    <ul>
+      <li>账号存续期间：您的信息将一直保存；</li>
+      <li>账号注销后：您的个人信息将在15个工作日内永久删除，不可恢复；</li>
+      <li>法律法规另有要求的，按规定期限保存。</li>
+    </ul>
+    <h3>4.3 安全措施</h3>
+    <ul>
+      <li>数据传输采用HTTPS加密协议；</li>
+      <li>敏感信息（如手机号）在展示时进行脱敏处理（如138****8888）；</li>
+      <li>访问权限严格限制，仅授权人员可在必要范围内访问；</li>
+      <li>建立数据安全应急预案，如发生信息泄露将及时通知您并采取补救措施。</li>
+    </ul>
+
+    <h2 id="p5">五、信息的共享与披露</h2>
+    <p>除以下情形外，我们不会向第三方共享您的个人信息：</p>
+    <ol>
+      <li><strong>为完成服务所必需：</strong>如短信验证码服务（仅传递手机号，不传递测算数据）；</li>
+      <li><strong>获得您的明确同意：</strong>在您主动同意的情况下共享；</li>
+      <li><strong>法律法规要求：</strong>根据司法机关、行政机关的合法要求；</li>
+      <li><strong>合并或收购：</strong>如平台发生合并、收购等变更，我们将要求接收方继续履行本隐私政策，并在变更前公告。</li>
+    </ol>
+    <div class="highlight">
+      <p><strong>承诺：</strong>我们不会向任何第三方出售您的个人信息。与第三方共享的数据均经过脱敏处理，不包含可识别您身份的信息。</p>
+    </div>
+
+    <h2 id="p6">六、您的权利</h2>
+    <p>根据《中华人民共和国个人信息保护法》，您享有以下权利：</p>
+    <ol>
+      <li><strong>查阅与复制权：</strong>您可在"个人中心"查阅您的个人信息和命盘档案，可申请复制您的数据；</li>
+      <li><strong>更正权：</strong>您可随时修改昵称、头像等信息；时辰反推提交后锁定的信息除外；</li>
+      <li><strong>删除权：</strong>您可申请删除特定测算记录，或注销账号永久删除全部数据；</li>
+      <li><strong>撤回同意权：</strong>您可随时撤回对本隐私政策的同意，注销账号即视为撤回；</li>
+      <li><strong>投诉权：</strong>如您认为我们侵犯了您的个人信息权益，可向网信办等监管部门投诉举报。</li>
+    </ol>
+
+    <h2 id="p7">七、未成年人保护</h2>
+    <p>本平台服务基于传统民俗文化，不面向未满18周岁的未成年人。如发现未成年人在未经监护人同意的情况下使用本平台服务，我们将采取措施删除相关信息。</p>
+    <div class="highlight">
+      <p><strong>提示：</strong>监护人应妥善保管手机及支付工具，防止未成年人未经授权使用本平台付费服务。如未成年人已产生付费行为，请联系客服处理。</p>
+    </div>
+
+    <h2 id="p8">八、Cookie与同类技术</h2>
+    <ul>
+      <li>本平台使用本地存储（LocalStorage）保存您的登录状态和偏好设置；</li>
+      <li>我们不使用跟踪Cookie进行跨站追踪；</li>
+      <li>您可通过浏览器设置清除本地存储数据。</li>
+    </ul>
+
+    <h2 id="p9">九、第三方SDK说明</h2>
+    <p>本平台可能使用以下第三方服务，其数据处理遵循各自隐私政策：</p>
+    <ul>
+      <li><strong>短信验证服务：</strong>用于发送登录验证码，仅传递手机号；</li>
+      <li><strong>支付服务：</strong>用于处理会员购买和时辰反推付费，仅传递订单金额和订单号，不传递测算数据。</li>
+    </ul>
+
+    <h2 id="p10">十、政策更新</h2>
+    <p>本平台可能根据法律法规变化或业务调整更新本隐私政策。更新后将在平台内公告，重大变更将提前30天通知您。如您不同意更新后的政策，可选择注销账号停止使用本平台服务。</p>
+
+    <h2 id="p11">十一、联系我们</h2>
+    <p>如您对本隐私政策有任何疑问、意见或建议，可通过以下方式联系我们：</p>
+    <ul>
+      <li>平台内"个人中心-账号设置-意见反馈"</li>
+      <li>电子邮箱：privacy@xuanxue-ai.com（示例）</li>
+    </ul>
+    <p>我们将在收到您的请求后15个工作日内予以回复。</p>
+  </div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById(tab).classList.add('active');
+}
+</script>
+</body>
+</html>
